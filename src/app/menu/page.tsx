@@ -42,7 +42,7 @@ export default function Menu({}) {
 
             {hasError && (
               <div className="text-center py-10 text-gray-500 text-lg">
-                Ha ocurrido un error al cargar el menú.
+                An error occurred while loading the menu.
               </div>
             )}
 

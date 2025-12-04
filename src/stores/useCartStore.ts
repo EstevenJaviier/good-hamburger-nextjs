@@ -18,12 +18,12 @@ export const useCartStore = create<CartState>((set, get) => ({
     const items = get().items;
 
     if (item.type === "sandwich" && items.some((i) => i.type === "sandwich")) {
-      set({ error: "Solo puedes agregar un (1) sándwich" });
+      set({ error: "You can only add one (1) sandwich" });
       return;
     }
 
     if (item.name === "Fries" && items.some((i) => i.name === "Fries")) {
-      set({ error: "Solo puedes agregar una porción de papas" });
+      set({ error: "You can only add one portion of fries" });
       return;
     }
 
@@ -31,7 +31,7 @@ export const useCartStore = create<CartState>((set, get) => ({
       item.name === "Soft drink" &&
       items.some((i) => i.name === "Soft drink")
     ) {
-      set({ error: "Solo puedes agregar una bebida" });
+      set({ error: "You can only add one drink" });
       return;
     }
 

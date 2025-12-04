@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Burger", "price": 5, "type": "sandwich" },
+  { "id": 2, "name": "Egg", "price": 4.5, "type": "sandwich" },
+  { "id": 3, "name": "Bacon", "price": 7, "type": "sandwich" },
+  { "id": 4, "name": "Fries", "price": 2, "type": "extra" },
+  { "id": 5, "name": "Soft drink", "price": 2.5, "type": "extra" }
+]

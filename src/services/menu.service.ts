@@ -8,7 +8,7 @@ export async function getMenu(): Promise<Item[]> {
   const res = await fetch("/menu.json");
 
   if (!res.ok) {
-    throw new Error("Error cargando el menú");
+    throw new Error("Error loading menu");
   }
 
   return res.json();

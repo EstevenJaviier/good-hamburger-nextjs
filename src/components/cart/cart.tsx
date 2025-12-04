@@ -44,7 +44,7 @@ export default function Cart() {
   return (
     <>
       <div className="bottom-0 left-0 w-full bg-white shadow-lg p-4 sm:static sm:w-80 sm:ml-auto sm:mt-10 border border-gray-200 rounded-xl">
-        <h2 className="text-2xl font-semibold mb-4">Carrito</h2>
+        <h2 className="text-2xl font-semibold mb-4">Cart</h2>
 
         {cart.error && <div className="text-red-500 mb-2">{cart.error}</div>}
 
@@ -60,7 +60,7 @@ export default function Cart() {
 
           {discountPercent() > 0 && (
             <p className="text-gray-600">
-              Descuento: {(discountPercent() * 100).toFixed(0)}%
+              Discount: {(discountPercent() * 100).toFixed(0)}%
             </p>
           )}
 
@@ -79,7 +79,7 @@ export default function Cart() {
 
         {showErrors && !customerName && (
           <div className="text-red-500 text-sm mt-1">
-            El nombre del cliente es requerido.
+            The customer's name is required.
           </div>
         )}
 
@@ -87,12 +87,12 @@ export default function Cart() {
           onClick={handleSubmitOrder}
           className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 w-full mt-3"
         >
-          Enviar Orden
+          Submit Order
         </button>
 
         {showErrors && !cart.getItems().length && (
           <div className="text-red-600 text-sm mt-1">
-            Debes agregar al menos un producto al carrito.
+            You must add at least one product to the cart.
           </div>
         )}
       </div>

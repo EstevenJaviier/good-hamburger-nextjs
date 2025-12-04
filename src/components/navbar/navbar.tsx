@@ -11,11 +11,11 @@ export default function Navbar() {
 
           <div className="flex gap-4">
             <Link href="/" className="hover:text-blue-500">
-              Menú
+              Menu
             </Link>
 
             <Link href="/orders" className="hover:text-blue-500">
-              Órdenes
+              Orders
             </Link>
           </div>
         </div>
